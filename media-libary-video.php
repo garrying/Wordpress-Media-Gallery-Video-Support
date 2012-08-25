@@ -149,8 +149,7 @@ if (!class_exists('mlv')) {
 			$string = mysql_escape_string($string);
 		  }
 		  return $string;
-		}
-            
+		}    
 			
         
   } //End Class
@@ -160,6 +159,20 @@ if (!class_exists('mlv')) {
 if (class_exists('mlv')) {
     $mlv_var = new mlv();
 } 
+
+function video_preview($form_fields, $post) {
+
+	$meta_keys = get_post_custom_keys($post->ID);
+	$meta_values = get_post_meta($post->ID, $meta_keys[0], true);
+
+	$form_fields["media_preview"]["label"] = __("Media Preview");
+	$form_fields["media_preview"]["input"] = "html";
+	$form_fields["media_preview"]["html"] = $meta_values;
+
+	return $form_fields;
+}
+// attach our function to the correct hook
+add_filter("attachment_fields_to_edit", "video_preview", null, 2);
 
 
 ?>
