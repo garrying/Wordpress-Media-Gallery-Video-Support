@@ -1,6 +1,6 @@
-# Wordpress Video Support for Media Library
+# Vimeo/Youtube for Wordpress Media Library
 
-A plugin that brings support to add external video via the built-in Media Library.
+Enhancing the Media Library by allowing Vimeo/Youtube content to be added as a piece of media.
 
 Originally by Rick Mead.
 

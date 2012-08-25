@@ -1,14 +1,12 @@
 <?php
 /*
-Plugin Name: Add Video to Media Library
+Plugin Name: Vimeo/Youtube to Media Library
 Plugin URI: 
-Description: Adds a video to the media library.
-Author: 
+Description: Enhancing the Media Library by allowing Vimeo/Youtube content to be added as a piece of media.
+Author: Garry Ing
 Version: 1.0.0
-Author URI: 
-*/   
-   
-
+Author URI: http://garrying.com
+*/
 
 /**
 *  wp-content and plugin urls/paths
